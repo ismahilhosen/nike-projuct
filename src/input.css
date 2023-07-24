@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+}
+
+@layer components{
+    header {
+        @apply bg-primary_o w-full
+    }
+    /* Mobile menu  */
+
+    .mobile-menu ul li{
+        @apply text-xl text-center py-7
+    }
+
+    .bg-contaner {
+        @apply flex lg:py-28 flex-col-reverse lg:flex-row gap-y-14 lg:gap-y-0 flex-wrap items-center
+    }
+
+    .bg-image {
+        @apply lg:w-1/2 flex justify-center items-center
+    }
+
+    .bg-image img {
+        @apply w-full
+    }
+
+    .bg-contan {
+        @apply lg:px-14 lg:w-1/2 mt-14 lg:mt-0
+    }
+
+    .bg-contan h1 {
+        @apply text-7xl  font-extrabold mb-10
+    }
+
+    .bg-contan p {
+        @apply mb-10 leading-relaxed 
+    }
+
+    .btn img {
+        @apply w-5 lg:w-7 h-auto
+    }
+
+    .btn span {
+        @apply text-base text-gray-50 font-normal
+    }
+    .btn {
+        @apply bg-secandary rounded-xl px-9 py-4 flex gap-3 items-center justify-around
+    }
+    .product-item{
+        @apply rounded-xl shadow-lg shadow-gray-700/50
+    }
+    .product-item2{
+        @apply rounded-xl shadow-lg shadow-gray-700/50
+    }
+    .item-cover{
+        @apply p-5
+    }
+    .img-dev{
+        @apply flex justify-center items-center bg-gray-200 rounded-xl w-full
+    }
+    .img-dev2{
+        @apply flex justify-center items-center rounded-3xl
+    }
+    .img-dev img{
+        @apply object-fill
+    }
+    .footer-contaner-item{
+        @apply w-5/6 flex  shadow-2xl shadow-black/20 py-3 px-7 my-9 rounded-xl mx-auto lg:mx-0
+    }
+
+
+
+
+}
+
+@layer utilities {
+    .container {
+        max-width: 1536px;
+    }
+
+    .liAnime{
+        transform: translateY(-100%);
+        transition: all .5s ease-in;
+    }
+    /* .liAnime1{
+        transition: all .6s ease-in;
+    } */
+
+    .text-h-primary{
+        font-size: 70px;
+    }
+    .footer-contaner-item img{
+        width: 70px;
+    }
+
+}
